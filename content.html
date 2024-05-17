@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More - Explore China</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-image: url('china-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            font-family: 'Noto Serif', serif;
+            font-size: 3em;
+            margin: 0;
+            z-index: 1;
+        }
+        header p {
+            font-size: 1.2em;
+            z-index: 1;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(to right, #ff4e50, #f9d423);
+            padding: 1em 0;
+        }
+        nav a {
+            color: white;
+            padding: 1em 2em;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .content {
+            padding: 2em;
+        }
+        .content h2 {
+            color: #ff4e50;
+            font-family: 'Noto Serif', serif;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        .content p {
+            font-size: 1.2em;
+            margin-bottom: 2em;
+            text-align: justify;
+        }
+        .content img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        .attraction {
+            margin-bottom: 3em;
+        }
+        .attraction div {
+            margin: 1em;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .attraction div:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .attraction div img {
+            border-radius: 10px;
+            margin-bottom: 1em;
+        }
+        .attraction div h3 {
+            text-align: center;
+            color: #ff4e50;
+            font-size: 1.5em;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2em;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form input, .contact-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff4e50;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #f9d423;
+        }
+        footer {
+            background: linear-gradient(to right, #f9d423, #ff4e50);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Learn More About China</h1>
+        <p>Delve Deeper into the Wonders of the Middle Kingdom</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#forbidden-city">Forbidden City</a>
+        <a href="#terracotta-army">Terracotta Army</a>
+        <a href="#zhangjiajie">Zhangjiajie</a>
+        <a href="#guilin">Guilin</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="content">
+        <section id="about">
+            <h2>About China</h2>
+            <p>China, officially known as the People's Republic of China, is a country in East Asia. It is the world's most populous country, with a population of more than 1.4 billion. Covering approximately 9.6 million square kilometers, it is the world's third or fourth largest country by area. China is a cradle of civilization, with its fertile plain in the Yellow River basin being the birthplace of ancient Chinese civilization.</p>
+            <img src="china-culture.jpg" alt="Chinese Culture">
+        </section>
+        <section id="forbidden-city" class="attraction">
+            <div>
+                <h2>Forbidden City</h2>
+                <img src="forbidden-city.jpg" alt="Forbidden City">
+                <p>The Forbidden City in Beijing is a majestic palace complex that served as the home of emperors and the political center of Chinese government for nearly 500 years. Its architectural grandeur and historical significance make it one of the most visited cultural landmarks in the world. The palace is a masterpiece of Chinese architecture, with its golden roofs, red walls, and intricate decorations symbolizing the majesty and authority of the emperor. Visitors can explore its vast courtyards, grand halls, and exquisite gardens, each telling stories of China's imperial past.</p>
+            </div>
+        </section>
+        <section id="terracotta-army" class="attraction">
+            <div>
+                <h2>Terracotta Army</h2>
+                <img src="terracotta-army.jpg" alt="Terracotta Army">
+                <p>Discovered in 1974, the Terracotta Army in Xi'an is a collection of terracotta sculptures depicting the armies of Qin Shi Huang, the first Emperor of China. The site includes thousands of life-sized figures, each with unique facial expressions and details. The army was buried with the emperor to protect him in the afterlife and is considered one of the greatest archaeological discoveries of the 20th century. The site offers a fascinating glimpse into ancient Chinese funerary art and military history, with ongoing excavations revealing new insights and artifacts.</p>
+            </div>
+        </section>
+        <section id="zhangjiajie" class="attraction">
+            <div>
+                <h2>Zhangjiajie National Forest Park</h2>
+                <img src="zhangjiajie.jpg" alt="Zhangjiajie National Forest Park">
+                <p>Zhangjiajie National Forest Park, with its towering sandstone pillars, inspired the floating Hallelujah Mountains in the movie Avatar. It is a UNESCO World Heritage Site and offers breathtaking views, scenic walks, and adventurous activities like glass-bottomed bridges. The park is known for its unique karst landscape, dense forests, and diverse wildlife, making it a paradise for nature lovers and photographers. Visitors can explore the park's numerous trails, take a cable car ride for panoramic views, and experience the thrill of walking on the world's longest and highest glass bridge.</p>
+            </div>
+        </section>
+        <section id="guilin" class="attraction">
+            <div>
+                <h2>Guilin</h2>
+                <img src="guilin.jpg" alt="Guilin">
+                <p>Known for its stunning karst landscape, Guilin offers picturesque scenery with its limestone hills, winding rivers, and traditional villages. A cruise on the Li River, surrounded by lush greenery and unique rock formations, is a must-do experience. Guilin's natural beauty has inspired poets and artists for centuries, with its iconic landscapes often depicted in traditional Chinese paintings. Visitors can explore the city's cultural heritage, visit ancient temples and pagodas, and enjoy the vibrant local cuisine. Nearby attractions include the Longji Rice Terraces and Yangshuo's scenic countryside, offering further exploration opportunities and outdoor activities.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                </section>
+                </div>
+                <footer>
+                <p>&copy; 2024 Explore China. All Rights Reserved.</p>
+                </footer>
+                </body>
+                </html>
+                ```
